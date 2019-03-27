@@ -1,7 +1,7 @@
 import os
 from multiprocessing import cpu_count
 
-bind=["localhost:portnumber"]     #配置nginx时，将此地址写入nginx配置文件，注意portnumber的开放接口
+bind=[#"localhost:portnumber"]     #配置nginx时，将此地址写入nginx配置文件，注意portnumber的开放接口
 daemon = True #守护进程
 workers = cpu_count()*2
 forworded_allow_ips = '*'
